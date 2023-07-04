@@ -6,6 +6,7 @@ font-family: 'Lexend Deca', sans-serif;*/
 *{
     margin:0px;
     padding: 0px;
+    overflow-y: hidden;
 }
 .conteiner{
     display: flex;
@@ -14,6 +15,7 @@ font-family: 'Lexend Deca', sans-serif;*/
     justify-content: center;
     height: 100vh;
     padding: 10px;
+   
     
 
     
@@ -31,6 +33,8 @@ font-family: 'Lexend Deca', sans-serif;*/
 
 .sedans, .suvs, .luxury{
     width: 350px;
+    position: relative;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.322);
 }
 .imagem{
     margin: 25px;
@@ -39,7 +43,7 @@ font-family: 'Lexend Deca', sans-serif;*/
 .titulo{
     position: relative;
     bottom: 75px;
-    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Big Shoulders Display',cursive;
     color: white;
     padding-left:25px 
 }
@@ -56,9 +60,9 @@ font-family: 'Lexend Deca', sans-serif;*/
 }
 
 .botao{
-    position: relative;
+    position: absolute;
     left: 25px;
-    bottom: 50px;
+    bottom: 20px;
     background-color: white;
     width: 150px;
     height: 50px;
@@ -67,6 +71,11 @@ font-family: 'Lexend Deca', sans-serif;*/
     color:hsl(31, 77%, 52%);
     cursor: pointer;
    
+}
+.botao:hover{
+    width: 155px;
+    height: 55px;
+    transition: 0.5s;
 }
 .suvs{
     display: flex;
@@ -113,6 +122,8 @@ a{
 }
 .attribution{
     font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    bottom: 0px;
 }
 
 @media screen and (max-width:1070px){
