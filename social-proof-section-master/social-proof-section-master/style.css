@@ -9,13 +9,13 @@
 
 .container{
     display: flex;
+    align-items: center;
     flex-direction: column;
     height: 100vw;
     width: 100vw;
     font-family: 'League Spartan', sans-serif
 }
 .inicio{
-
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -60,20 +60,20 @@
 }
 
 .final{
-    position: relative;
-    top:30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin: auto;
     max-width: 350px;
     border-radius: 20px;
+    margin: 10px;
    
 
 }
 .final img{
+    position: relative;
+    top: 1rem;
     border-radius: 50%;
     padding: 30px;
     width: 13%;
@@ -115,4 +115,62 @@
 }
 
 
+@media (min-width:1440px){
+    .container{
+        height: 100vh;
+        width: 100vw;
+    }
+   .inicio{
+    display: flex;
+    align-self: flex-start;
+    position: relative;
+    top: 100px;
+    left: 20%;
 
+   }
+   .inicio > h1{
+    font-size: 3em;
+    max-width: 350px;
+    text-align: left;
+   }
+
+   .inicio p {
+    position: relative;
+    right: 20px;
+    text-align: left;
+    font-size: 1.2em;
+   }
+
+   .avaliacao{
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    bottom: 170px;
+    right:20%;
+   }
+   .avaliacao-1{
+    border-radius: 10px;
+   }
+   .primeiro{
+    margin-right: 5rem;
+   }
+  .segundo{
+    margin-right:2.5rem;
+  }
+
+  .final{
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 350px 350px 350px;
+  }
+
+  .segundoh{
+    margin-top: 3rem;
+  }
+  
+  .primeiroh{
+    margin-bottom: 3rem;
+  }
+
+
+}
