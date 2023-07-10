@@ -172,5 +172,10 @@
     margin-bottom: 3rem;
   }
 
-
+ footer .attribution{
+   position: relative;
+   top: 50px;
+   right: 115%;
+   width: 400px;
+ }
 }
